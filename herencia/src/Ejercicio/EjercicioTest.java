@@ -30,7 +30,7 @@ public class EjercicioTest {
 		System.out.println("Saldo insuficiente");
 		else
 		c.reintegro(mi);
-		c.salvar();
+		
 
 	}
 

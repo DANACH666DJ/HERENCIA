@@ -12,4 +12,8 @@ public class TPAviso extends TareaPeriodica {
 	public String leerMsg() {
 		return msg;
 	}
+	public void ejecutarTarea() {
+		System.out.println("ATENCIÓN AVISO: " + msg);
+		desactivar();
+		}
 }

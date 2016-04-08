@@ -2,9 +2,9 @@ package TareaPeriodica;
 
 import java.util.*;
 
-public class TareaPeriodica {
-	int periodoSegs; // Periodo de ejecución
-	Date ultimaEj; // Hora de última ejecución
+    abstract class TareaPeriodica {
+	protected int periodoSegs; // Periodo de ejecución
+	protected Date ultimaEj; // Hora de última ejecución
 	boolean activa;
 
 	public TareaPeriodica(int aPeriodoSegs) {
@@ -36,9 +36,9 @@ public class TareaPeriodica {
 		return (calProximaEj.before(calAhora));
 	}
 
-	public void ejecutarTarea() {
-		System.out.println("Ejecucion de tarea");
-	}
+	abstract public void ejecutarTarea();
+		
+	
 
 	public void activar() {
 		activa = true;

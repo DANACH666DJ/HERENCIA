@@ -14,4 +14,12 @@ public class TPEjecucion extends TareaPeriodica {
 	String leerCmd() {
 		return cmd;
 	}
+	public void ejecutarTarea() {
+		try {
+		Runtime.getRuntime().exec(cmd);
+		}
+		catch(IOException e) {
+		System.out.println("Imposible ejecutar comando: "+ cmd );
+		}
+		}
 }
