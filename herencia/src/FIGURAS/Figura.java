@@ -1,8 +1,8 @@
 package FIGURAS;
 
-public abstract class Figura {
+public interface Figura {
 	// No tienen implementación
-	public abstract double area();
+	public double area();
 
-	public abstract void mostrarNombre();
+	public void mostrarNombre();
 }

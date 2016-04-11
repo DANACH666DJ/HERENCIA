@@ -1,6 +1,6 @@
 package FIGURAS;
 
-public class Cuadrado extends Figura {
+public class Cuadrado implements Figura {
 	// Atributo
 	protected int lado;
 

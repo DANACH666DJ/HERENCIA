@@ -12,7 +12,7 @@ public class AppGestorTareas {
 			System.out.println("Esperando ejecución de comando...");
 		tpe.ejecutarTarea();
 
-		System.out.println("Aviso: " + tpa.leerMsg());
+		
 	}
 
 }

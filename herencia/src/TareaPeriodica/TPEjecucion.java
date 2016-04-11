@@ -3,23 +3,36 @@ package TareaPeriodica;
 import java.lang.Runtime;
 import java.io.IOException;
 
-public class TPEjecucion extends TareaPeriodica {
+public class TPEjecucion implements TareaPeriodica {
 	String cmd;
-
+	
 	public TPEjecucion(String aCmd, int aPeriodoSegs) {
-		super(aPeriodoSegs);
+		super();
 		cmd = aCmd;
+		}
+
+	@Override
+	public boolean necesitaEjecucion() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
-	String leerCmd() {
-		return cmd;
-	}
+	@Override
 	public void ejecutarTarea() {
-		try {
-		Runtime.getRuntime().exec(cmd);
-		}
-		catch(IOException e) {
-		System.out.println("Imposible ejecutar comando: "+ cmd );
-		}
-		}
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void activar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void desactivar() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

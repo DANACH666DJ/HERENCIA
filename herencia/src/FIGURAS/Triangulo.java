@@ -1,6 +1,6 @@
 package FIGURAS;
 
-public class Triangulo extends Figura {
+public class Triangulo implements Figura {
 	// Atributos
 	protected int base, altura;
 
